@@ -1,11 +1,10 @@
 weather = input("What's the weather like today? (sunny/rainy/cold): ")
-# Prompts the user for input
 
-if weather == "sunny": # Executes if the weather is sunny
+if (weather) == ("sunny"): 
     print("Wear a t-shirt and sunglasses.")
-elif weather == "rainy": # Executes if the weather is rainy
+elif (weather) == ("rainy"): 
     print("Don't forget your umbrella and a raincoat.")
-elif weather == "cold": # Executes if the weather is cold
+elif (weather) == ("cold"): 
     print("Make sure to wear a warm coat and a scarf.")
-else: # Executes if the above codes don't get executed
+else: 
     print("Sorry, I don't have recommendations for this weather.")
