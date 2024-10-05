@@ -42,4 +42,3 @@ class Library:
                 print(f"{book.title} by {book.author}")
         else:
             print("No books are currently available.")
-       
