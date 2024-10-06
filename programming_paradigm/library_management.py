@@ -12,7 +12,7 @@ class Book:
 
     def is_available(self):
         return not self._is_checked_out
-
+    
 
 class Library:
     def __init__(self):
@@ -26,14 +26,14 @@ class Library:
             if book.title == title and book.is_available():
                 book.check_out()
                 return
-        print(f"Book '{title}' is not available or not found.")
+        print(f"Book '{title}' is not available.")
 
     def return_book(self, title):
         for book in self._books:
             if book.title == title and not book.is_available():
                 book.return_book()
                 return
-        print(f"Book '{title}' is already available or not found.")
+        print(f"Book '{title}' is already available.")
 
     def list_available_books(self):
         available_books = [book for book in self._books if book.is_available()]
