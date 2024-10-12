@@ -28,5 +28,3 @@ class Library:
                 print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             else:
                 print(f"Book: {book.title} by {book.author}")
-
-
